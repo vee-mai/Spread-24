@@ -1,0 +1,23 @@
+:root {
+	---root-size: 1.2rem;
+	color:blue;
+}
+
+body{
+	font-size: var(--root-size);
+	font-family: inter, sans-serif;
+}
+
+
+.responsive-row{
+	margin-top: var(---root-size)
+	display:flex;
+	flex-direction: column;
+	gap: var(---root-size);
+}
+
+@media (min-width:600px){
+	:root{
+		---root-size:1.5rem;
+	}
+}
