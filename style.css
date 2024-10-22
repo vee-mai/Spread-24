@@ -1,14 +1,19 @@
 :root {
-	---root-size: 1.2rem;
+	---root-size: 1rem;
 	color:blue;
 }
 
 body{
 	font-size: var(--root-size);
 	font-family: inter, sans-serif;
+	line-height: 1.5;
+	padding: 40px;
 }
 
+#article-title{
+	
 
+}
 .responsive-row{
 	margin-top: var(---root-size)
 	display:flex;
@@ -16,8 +21,24 @@ body{
 	gap: var(---root-size);
 }
 
+.colum{
+	width: 100%
+}
+
 @media (min-width:600px){
 	:root{
 		---root-size:1.5rem;
+	}
+}
+
+@media (min-width: 800px){
+	.responsive-row{
+		flex-direction: row;
+	}
+}
+
+@media print {
+	:root{
+		--root-size: 1rem;
 	}
 }
