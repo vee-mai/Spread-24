@@ -1,6 +1,6 @@
 :root {
 	---root-size: 1rem;
-	color:blue;
+	color:rgb(0, 0, 0);
 }
 
 body{
@@ -11,7 +11,30 @@ body{
 }
 
 #article-title{
-	
+	font-family: "Bricolage Grotesque", serif;
+	font-size: 70px;
+	line-height:1;
+	color:black;
+
+}
+
+#date{
+	font-size:20px;
+}
+
+#author{
+	padding-top:10px;
+	font-size:24px;
+}
+
+#box1{
+	background-color:#3718FF;
+}
+
+.quote{
+	line-height:25px;
+	color:white;
+	padding:5px;
 
 }
 .responsive-row{
@@ -25,13 +48,22 @@ body{
 	width: 100%
 }
 
-@media (min-width:600px){
+#black-bg{
+	background-color:black;
+}
+
+/*paragraph-styless*/
+p{
+	text-indent:20px;
+}
+
+@media (min-width:375px){
 	:root{
 		---root-size:1.5rem;
 	}
 }
 
-@media (min-width: 800px){
+@media (min-width: 1280px){
 	.responsive-row{
 		flex-direction: row;
 	}
