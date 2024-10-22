@@ -8,18 +8,21 @@ body{
 	font-family: inter, sans-serif;
 	line-height: 1.5;
 	padding: 40px;
+	
+	/* background:  linear-gradient(to bottom, white 0%, white 50%,black 50%, black 100%); */
 }
 
 #article-title{
 	font-family: "Bricolage Grotesque", serif;
-	font-size: 70px;
+	font-size: 6em;;
 	line-height:1;
 	color:black;
 
 }
 
 #date{
-	font-size:20px;
+	font-size:15px;
+	text-align: end;
 }
 
 #author{
@@ -29,6 +32,8 @@ body{
 
 #box1{
 	background-color:#3718FF;
+	font-family: serif;
+	font-style: italic;
 }
 
 .quote{
@@ -47,6 +52,54 @@ body{
 .colum{
 	width: 100%
 }
+
+.black{
+	background-color: black;
+	margin-left: -3em;
+	margin-right: -4em;
+	padding: 30px;
+	color: white;
+	
+ 
+}
+
+div.textline
+{
+    width: 100%;
+	min-width:375px;
+    height: 50px;
+    background-color: #e924ae;
+	margin-top:-10%;
+	margin-left:-20%;
+	padding-right: 10px;
+}
+
+div.moving
+{
+    position: relative;
+    font-family: Arial;
+
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-animation: movingtitle 4s infinite alternate linear;
+    animation: movingtitle 4s infinite alternate linear;
+
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+@-webkit-keyframes movingtitle
+{
+/* modified */
+    to {text-indent:100%;}
+}
+@keyframes movingtitle
+{
+/* modified */
+    to {text-indent:100%;}
+}
+
+
 
 #black-bg{
 	background-color:black;
