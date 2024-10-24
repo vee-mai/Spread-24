@@ -14,12 +14,16 @@ body{
 
 #article-title{
 	font-family: "Bricolage Grotesque", serif;
-	font-size: 3em;
+	font-size:4em;
 	line-height:1;
 	color:black;
 
 }
+#secondh2{
+	font-size: 80px;
+line-height:1.2em;
 
+}
 #date{
 	font-size:15px;
 	text-align: end;
@@ -37,7 +41,14 @@ body{
 	background-color:#3718FF;
 	font-family: serif;
 	font-style: italic;
-
+}
+.blackbox{
+	background-color: black;
+	font-family: serif;
+	font-style:italic;
+	padding:20px;
+	line-height: 25px;
+	
 }
 .responsive-row{
 	margin-top: var(---root-size)
@@ -55,6 +66,18 @@ body{
 	/* margin-left: -3em; */
 	/* margin-right: -4em; */
 	padding: 30px;
+	color: white;
+}
+.yellow-bg{
+	background-color: rgb(240, 197, 24);
+	padding:30px;
+	margin-top :30px;
+
+}
+.pink-bg{
+	background-color:rgb(212, 67, 205);
+	padding: 30px;
+	margin-top: 30px;
 	color: white;
 }
 
