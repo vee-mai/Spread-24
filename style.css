@@ -37,6 +37,7 @@ body{
 
 .heading {
 	font-family: "Bricolage Grotesque", sans-serif;
+	
 }
 
 	/* class_heading styles */
@@ -206,10 +207,11 @@ h1 {
 	font-weight: bold;
 	padding-block:2px;
 	}
-/* hover */
+
 a[href^='https://'] { color:#f92fca }
+a[href*='.pdf'] { color:#f92fca  }
 a:hover {color:#3718FF}
-a: link { color:red;}
+/* a: link { color:red;} */
 
 /* .blackbox{
 	background-color: black;
