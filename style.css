@@ -1,32 +1,72 @@
-:root {
+
+/* variables list */
+:root { 
+	font-size: 16px;
 	---root-size: 1rem;
-	color:rgb(0, 0, 0);
+
+	/* general styles */
+	--heading-font-family:"Bricolage Grotesque", serif;
+	/* color:rgb(0, 0, 0); */
 }
 
 body{
 	font-size: var(--root-size);
 	font-family: inter, sans-serif;
 	line-height: 1.5;
-	padding: 40px;
-	
-	/* background:  linear-gradient(to bottom, white 0%, white 50%,black 50%, black 100%); */
+	text-align: start;
+	margin-left: 20px;
+	padding: var(--spacing);
 }
 
-#article-title{
-	font-family: "Bricolage Grotesque", serif;
-	font-size:4em;
-	line-height:1;
+/* heading styles */
+h1{
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size:55px;
+	font-weight:bold;
+	line-height:65px;
+	text-transform:Uppercase;
 	color:black;
-
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
 }
+
+/*class-styles */
+.header-outline-text{
+	font-size:85px;
+	/* --webkit-text-stroke-color: black; */
+	/* --webkit-text-stroke-width: medium; */
+}
+
+.repeted-words{
+	color:#FF72DE;
+}
+
+/* id-styles */
+
+#uppercase-words{
+	text-transform: uppercase;
+	color:blue
+}
+
+#date{
+	font-family:"bricolage Grotesque", serif;
+	font-size:12px;
+	font-weight:bold;
+	position:relative;
+	left:200px;
+	top:-300px;
+	color:#3718FF
+}
+
+#author{
+	font-size:14px;
+	color:#FF72DE;
+}
+
 #secondh2{
 	font-size: 80px;
 line-height:1.2em;
 
-}
-#date{
-	font-size:15px;
-	text-align: end;
 }
 
 #author{
@@ -51,23 +91,23 @@ line-height:1.2em;
 	
 }
 .responsive-row{
-	margin-top: var(---root-size)
+	margin-top: var(--root-size)
 	display:flex;
 	flex-direction: column;
-	gap: var(---root-size);
+	gap: var(--root-size);
 }
 
 .colum{
 	width: 100%
 }
 
+/* section-color */
 .black-bg{
 	background-color: black;
-	/* margin-left: -3em; */
-	/* margin-right: -4em; */
 	padding: 30px;
 	color: white;
 }
+
 .yellow-bg{
 	background-color: rgb(240, 197, 24);
 	padding:30px;
@@ -89,30 +129,27 @@ line-height:1.2em;
 	color: white;
 }
 
-/* div.textline */
-{
+/* animated text */
+.animated-text {
 	width: 100%;
-	min-width:375px;
-	height: 50px;
+	min-width: 375px;
+	height: 40px;
 	background-color: #e924ae;
-	margin-top:-10%;
-	margin-left:-20%;
+	margin-top: -10%;
+	margin-left: -20%;
 	padding-right: 10px;
 }
 
-/* div.moving */
-{
+.moving-text{
 	position: relative;
-	font-family: Arial;
-
+	font-family:"bricolage Grotesque", serif;
 	font-size: 30px;
-	font-weight: bold;
 	-webkit-animation: movingtitle 4s infinite alternate linear;
 	animation: movingtitle 4s infinite alternate linear;
-
-	white-space:nowrap;
-	overflow:hidden;
+	white-space: nowrap;
+	overflow: hidden;
 }
+
 
 @-webkit-keyframes movingtitle
 {
@@ -125,33 +162,44 @@ line-height:1.2em;
     to {text-indent:100%;}
 }
 
-
-
-#black-bg{
-	background-color:black;
-}
-
 /*paragraph-styless*/
 p{
 	text-indent:20px;
 }
 
-@media (min-width:375px){
-	:root{
-		---root-size:1.5rem;
-	}
-	main{
-		max-width: 20rem;
-	}
-
-	section>p{
-		font-size:1.2rem;
-	}
+.container{
+	width: 100%;
+	margin-left:auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
+section:first-child {background-color:black;}
+
+/* Mobile-Media-Query */
+@media (min-width:375px){
+	p{
+		width: 100%;
+	}
+
+	/* :root{ */
+	/* ---root-size:1.5rem; */
+}
+
+/* Breakpoint Media Query */
+@media (min-width: 825px)
+	:root{
+		--font-size: 18px;
+		--spacing: 20px;
+	}
+
+/* Desktop Media Query */
 @media (min-width: 1280px){
-	.responsive-row{
-		flex-direction: row;
+	/* :root{ */
+		
+	}
+	/* .responsive-row{ */
+		/* flex-direction: row; */
 	}
 }
 
@@ -159,12 +207,10 @@ main{
 	max-width: 35rem;
 }
 
-section>p{
-	font-size:1.2rem;
-}
-
-/* @media print { */
-	:root{
-		--root-size: 1rem;
-	}
+header{
+	background:white
+	color:black;
+	/* min-height:var(--header-height); */
+	/* margin-bottom:var(--main-margin); */
+	/* padding:var(--header-padding); */
 }
