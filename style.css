@@ -235,7 +235,15 @@ line-height:1.0em;
 	display:flex;
 	flex-direction: column;
 }
-
+.black-section{
+	background-color:black;
+	display:flex;
+	flex-direction: column;
+	color: white;
+	padding: var(--padding);
+	
+	
+}
 .black2-section{
 	background-color:rgb(0, 0, 0);
 	padding: 30px;
