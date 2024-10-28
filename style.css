@@ -116,6 +116,13 @@ h1 {
 	font-weight: 700;
 }
 
+.section-padding-pink{
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+}
+
 .author-name {
 	color: #FF72DE;
 }
@@ -319,7 +326,19 @@ line-height:1.0em;
 	}
 
 	.pink-section.section-padding{
-		align-items: baseline;
+		align-items: end;
+		justify-content: end;
+	}
+
+	.section-padding-pink{
+		align-items: end;
+		justify-content: end;
+		gap: 50px;
+	}
+
+	.heading-pink-section{
+		/* height of the title */
+		height: 100px;
 	}
 }
 /* Breakpoint Media Query */
@@ -376,9 +395,10 @@ line-height:1.0em;
 	}
 }
 
-@media (min-width:816px){
+@media print and (max-height: 100px; max-width: 10px;){
 
 }
+
 
 footer{
 	margin-top:10px;
