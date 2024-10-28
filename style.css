@@ -230,20 +230,28 @@ a:hover {color:#3718FF}
 line-height:1.0em;
 } 
 
-.yellow-section{
-	background-color:#ffff00;
-	padding:30px;
-	display:flex
-	flex-direction: column;
-}
-
 .pink-section{
 	background-color:rgb(212, 67, 205);
-	padding: 30px;
-	display:flex
+	display:flex;
 	flex-direction: column;
 }
 
+.black2-section{
+	background-color:rgb(0, 0, 0);
+	padding: 30px;
+	display:flex;
+	flex-direction: column;
+}
+
+.heading-pink-section {
+	display: flex;
+	justify-content: flex-end;
+}
+	
+.section-padding-pink{
+	display:flex;
+	flex-direction:row-reverse;
+}
 
 /* animated text
 .animated-text {
