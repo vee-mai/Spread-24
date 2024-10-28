@@ -309,6 +309,10 @@ line-height:1.0em;
 		text-shadow: none;
 		color: black
 	}
+
+	.pink-section.section-padding{
+		align-items: baseline;
+	}
 }
 /* Breakpoint Media Query */
 @media (min-width: 825px) {
