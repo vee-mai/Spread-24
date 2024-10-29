@@ -208,9 +208,9 @@ h1 {
 	padding-block:2px;
 	}
 
-a[href^='https://'] { color:#f92fca }
-a[href*='.pdf'] { color:#f92fca  }
-a:hover {color:#3718FF}
+a[href^='https://'] { color:#3718FF }
+a[href*='.pdf'] { color:#3718FF  }
+a:hover {color:#ffff00}
 /* a: link { color:red;} */
 
 /* .blackbox{
