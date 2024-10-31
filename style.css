@@ -132,13 +132,13 @@ h1 {
 	color: #FF72DE;
 }
 
-.author.heading{
+.navbar{
 	background-color:white;
 	padding:20px;
 	position:sticky;
 	top:0px;
 	left: 30px;
-	
+	z-index:10000;
 }
 
 .introduction {
@@ -483,6 +483,12 @@ a:hover {color:#ffff00}
 	
 	.pink-section.section-padding{
 		flex-direction:row;
+	}
+
+	.last-grid{
+		display: grid;
+		grid-template-columns: 40% 60%;
+		grid-column-start: 2;
 	}
 }
 
