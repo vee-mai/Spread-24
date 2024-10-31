@@ -37,8 +37,10 @@ body{
 
 .heading {
 	font-family: "Bricolage Grotesque", sans-serif;
-
+	
 }
+
+
 
 /* class_heading styles */
 .text-outline {
@@ -49,6 +51,8 @@ body{
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
 }
+
+
 
 .atf {
 	padding: 70px var(--padding) 40px var(--padding);
@@ -234,15 +238,35 @@ a:hover {color:#ffff00}
 
 
 #heading-black{
-	font-size: 4rem;
+	font-size: 5rem;
 	font-weight:700;
 	line-height:1em;
 	padding-bottom:2rem;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typewriter 2s steps(13) infinite alternate,
+		blink 800ms steps(13) infinite normal;
+	border-right: 2px solid black;
+}
+
+@keyframes typewriter {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 50%;
+	}
+		}
+	
+		
+
+
 } 
 
 .pink-section{
-	background-color:rgb(212, 67, 205);
-	flex-direction: column;
+	background-color: #FF72DE;
+	flex-direction: column; 
 }
 
 .black-section{
@@ -298,6 +322,7 @@ a:hover {color:#ffff00}
 	align-items: end;
 	justify-content: end;
 	flex:auto;
+	background-color: rgb(212, 67, 205);
 }
 
 .section-padding-pink{
@@ -308,17 +333,28 @@ a:hover {color:#ffff00}
 
 .heading-pink-section{
 	display: flex;
-	font-size: 2rem;
+	font-size: 4rem;
 	font-weight:bold;
-	line-height:2rem;
+	line-height:4rem;
 	padding-bottom: 2.5rem;	
 	justify-content: flex-end;
+	align-items:ends;
+	color :black;
+	
 }
+
 
 /* Mobile-Media-Query */
 @media (min-width:350px){
 	:root {
 		--padding: 2rem;
+	}
+
+	
+
+	.heading-pink-section{
+		color:white;
+		
 	}
 
 	.mobile-hidden {
@@ -350,13 +386,28 @@ a:hover {color:#ffff00}
 
 	.black2-section-heading{
 		background-color:black;
-		color:#FFFF00;
+		color:  color: #fff;
+		text-shadow:
+			0 0 7px #fff,
+			0 0 10px #fff,
+			0 0 21px #fff,
+			0 0 42px #0fa,
+			0 0 82px #0fa,
+			0 0 92px #0fa,
+			0 0 102px #0fa,
+			0 0 151px #0fa;
 		font-size:5rem;
 		font-weight:550;
 		line-height:5rem;
 		padding-bottom:4rem;
+		animation: blinker 1.5s ease-in-out infinite;
 
 	}
+	@keyframes blinker {
+		50% {
+		  opacity: 0;
+		}
+	  }
 
 	.last-section{
 	padding:var(--padding);
@@ -419,6 +470,7 @@ a:hover {color:#ffff00}
 	.paragraphs-style{
 		line-height:2rem;
 	}
+	
 }
 
 @media print and (max-height: 100px; max-width: 10px;){
