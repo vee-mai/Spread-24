@@ -132,6 +132,15 @@ h1 {
 	color: #FF72DE;
 }
 
+.author.heading{
+	background-color:white;
+	padding:20px;
+	position:sticky;
+	top:0px;
+	left: 30px;
+	
+}
+
 .introduction {
 	background: black;
 	color: white;
@@ -319,10 +328,11 @@ a:hover {color:#ffff00}
  */
  
  .pink-section.section-padding{
-	align-items: end;
-	justify-content: end;
-	flex:auto;
+	display:flex;
+	align-items: flex-end;
+	justify-content: flex-end;
 	background-color: rgb(212, 67, 205);
+	gap: 30px;
 }
 
 .section-padding-pink{
@@ -350,11 +360,8 @@ a:hover {color:#ffff00}
 		--padding: 2rem;
 	}
 
-	
-
 	.heading-pink-section{
-		color:white;
-		
+		color:white;	
 	}
 
 	.mobile-hidden {
@@ -384,6 +391,9 @@ a:hover {color:#ffff00}
 		align-items: end;
 	}
 
+	.pink-section.section-padding{
+		flex-direction:column;
+	}
 	.black2-section-heading{
 		background-color:black;
 		color:  color: #fff;
@@ -471,6 +481,9 @@ a:hover {color:#ffff00}
 		line-height:2rem;
 	}
 	
+	.pink-section.section-padding{
+		flex-direction:row;
+	}
 }
 
 @media print and (max-height: 100px; max-width: 10px;){
