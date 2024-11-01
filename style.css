@@ -17,7 +17,27 @@ body{
 	line-height: 1.5;
 	padding: var(--spacing);
 }
+footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:2rem;
 
+}
+#citation,footer p{margin: 0;
+font-style: italic;}
+footer p:nth-child(1),
+footer p:nth-child(2){
+	display:inline}
+
+#Top{
+	text-decoration: underline;
+	font-weight: bold;
+	color:#FFFF00
+}
+#Top hover{
+	color:#1911FF
+}
 /* class styles */
 .mobile-hidden {
 	display: none;
@@ -139,7 +159,7 @@ h1 {
 	position:sticky;
 	top:0px;
 	left: 30px;
-	z-index:10000;
+	z-index:auto;
 }
 
 .introduction {
@@ -385,7 +405,7 @@ a:hover {color:#ffff00}
 	}
 
 	.section-padding-black2{
-		padding:var(--padding);
+		padding:calc(var(--padding)*2);
 		background-color:#000000;
 		color:white;
 		flex-direction: column;
@@ -503,10 +523,101 @@ a:hover {color:#ffff00}
 h1{
 	font-size:10rem;
 }
+
+h2{
+	font-size:10rem;
+	
+
+}
 footer{
 	margin-top:10px;
 	border-top: solid 1px;
 	background-color:black;
 	color:white;
 }
+.heading-pink-section{
+	color:black;
+	/* justify-content: center; */
+	font-size: 15erm;
+	text-decoration: underline;	
+	
+}
+
+
+
+#heading-black{
+	animation:none;
+	font-size:30erm;
+}
+.black2-section-heading{
+	color:#3718FF;
+	font-weight:lighter;
+	text-shadow: none;
+	transition:none;
+	text-align: right
+	
+	
+	
+}
+.pink-heading {
+	text-shadow: none;
+	color:black;
+	transition: none;
+	text-decoration: underline;
+	
+}
+.yellow-tune{
+	text-shadow: none;
+	color:black;
+	transition: none;
+	font-style: oblique;
+	font-weight: bolder;
+	text-decoration:solid;
+}
+
+.author-name {
+	color:black;
+	text-align: right;
+}
+.author-heading{
+	text-align: right;
+
+}
+.info-box{
+	font-style:italic;
+	color:black;
+	text-decoration-line:underline;
+}
+.published-date {
+	color:#3718FF;
+	font-weight:lighter;
+	padding-bottom: 10px;
+	margin-top:-10px;
+}
+h1{margin-bottom: 10erm;}
+
+.repeated-words{
+	font-style: italic;
+	font-weight:bold;
+	color:black;
+	text-decoration: overline;
+}
+.introduction{
+	color:darkgray;
+}
+.section-padding-black2{
+	color:darkslategrey;
+}
+#Top{
+	color:black;
+}
+footer{
+	color:grey;
+}
+
+	* {animation: none;
+		transition: none;
+		}
+
+
 }
