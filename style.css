@@ -33,7 +33,7 @@ footer p:nth-child(2){
 #Top{
 	text-decoration: underline;
 	font-weight: bold;
-	color:#FFFF00
+	color:#FF72DE
 }
 #Top hover{
 	color:#1911FF
@@ -149,6 +149,9 @@ h1 {
 	max-width:500px;
 }
 
+.author-heading{
+	font-weight: bold;
+}
 .author-name {
 	color: #FF72DE;
 }
@@ -416,6 +419,8 @@ a:hover {color:#ffff00}
 	.pink-section.section-padding{
 		flex-direction:column;
 	}
+
+
 	.black2-section-heading{
 		background-color:black;
 		color:  color: #fff;
@@ -521,7 +526,8 @@ a:hover {color:#ffff00}
 @media print {
 
 h1{
-	font-size:10rem;
+	font-size:8.5rem;
+	line-height: 7rem;
 }
 
 h2{
@@ -551,7 +557,7 @@ footer{
 }
 .black2-section-heading{
 	color:#3718FF;
-	font-weight:lighter;
+	font-weight:bold;
 	text-shadow: none;
 	transition:none;
 	text-align: right
