@@ -43,7 +43,7 @@ footer p:nth-child(2){
 }
 
 #Top{
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	font-weight: bold;
 	color:#FFFF00
 }
@@ -173,14 +173,13 @@ footer p:nth-child(2){
 
 
 
-
 .author {
 	font-size: 1.125rem;
 	font-weight: bold;
 }
 .author-heading{
 	font-weight: bold;
-	text-decoration: underline;
+	
 	color: black
 }
 
@@ -299,7 +298,13 @@ footer p:nth-child(2){
 	}
 
 
-a[href^='https://'] { color:#3718FF}
+a[href^='https://'] { color:#3718FF,
+	.author-black{
+		color:black
+	}}
+.author-black{
+	color:black
+}
 a[href*='.pdf'] { color:#3718FF  }
 a:hover {color:#ffff00}
 /* a: link { color:red;} */
