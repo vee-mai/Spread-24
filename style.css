@@ -17,7 +17,6 @@ body{
 h1 {
 	font-size: 22vw;
 	line-height: 17vw;
-	
 }
 
 footer{
@@ -135,7 +134,6 @@ footer p:nth-child(2){
 	width: 100%;
 	overflow: visible;
 	overflow-x: hidden;
-	background:#F689DC;
 	padding: 60px;
 	height: 200px;
 	position: relative;
@@ -297,6 +295,18 @@ footer p:nth-child(2){
 	padding-block:2px;
 	}
 
+.link1{
+	color:#F689DC
+}
+
+.link1:visited{
+	color:#1911FF
+}
+
+.link1:hover{
+	color:#FFFF00
+}
+
 
 a[href^='https://'] { color:#3718FF,
 	.author-black{
@@ -364,7 +374,7 @@ a:hover {color:#ffff00}
 	flex-direction: column;
 }
 
- .pink-section.section-padding{
+ .pink-section{
 	display:flex;
 	align-items: flex-end;
 	justify-content: flex-end;
@@ -429,7 +439,7 @@ a:hover {color:#ffff00}
 		align-items: end;
 	}
 
-	.pink-section.section-padding{
+	.pink-section{
 		flex-direction:column;
 	}
 	
@@ -502,7 +512,7 @@ a:hover {color:#ffff00}
 
 	.intro-one {
 		display: flex;
-		flex-direction: column;
+		flex-direction:row;
 	}
 
 	.intro-two {
@@ -527,7 +537,6 @@ a:hover {color:#ffff00}
 }
 
 .section-padding-black2{
-	padding:calc(var(--padding)*2);
 	background-color:#000000;
 	color:white;
 	flex-direction: column;
@@ -547,14 +556,15 @@ a:hover {color:#ffff00}
 
 	.paragraphs-style{
 		line-height:2rem;
-		
 	}
 	footer {
-        background-color: black;
-        color: white;
-        flex-direction: column;}
+		background-color: black;
+		color: white;
+		display: flex;
+		flex-direction:row;
+	}
 
-	.pink-section.section-padding{
+	.pink-section{
 		flex-direction:row;
 	}
 
@@ -570,9 +580,17 @@ a:hover {color:#ffff00}
 		grid-column-start: 2;
 	}
 	
+	.heading-pink-section{
+		font-size:6rem;
+		line-height: 6.5rem;
+	}
 }
 /* Print */
 @media print {
+	.no-print , .no-print *
+    {
+        display: none !important;
+    }
 
 h1{
 	font-size :10rem;
