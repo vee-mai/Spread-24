@@ -17,13 +17,18 @@ body{
 h1 {
 	font-size: 22vw;
 	line-height: 17vw;
+	
 }
 
 footer{
 	display: flex;
+	background-color: black;
+	color: white;
 	justify-content: space-between;
 	align-items: center;
 	padding:2rem;
+	flex-direction: column;}
+	
 }
 
 #citation,
@@ -37,13 +42,13 @@ footer p:nth-child(2){
 	display:inline;
 }
 
-#scroll-to-top{
+#Top{
 	text-decoration: underline;
 	font-weight: bold;
 	color:#FFFF00
 }
-#scroll-to-top hover{
-	color:#F689DC;
+#Top hover{
+	color:#F689DC
 }
 
 /* class-styles */
@@ -171,7 +176,12 @@ footer p:nth-child(2){
 
 .author {
 	font-size: 1.125rem;
-	font-weight: 700;
+	font-weight: bold;
+}
+.author-heading{
+	font-weight: bold;
+	text-decoration: underline;
+	color: black
 }
 
 .section-padding-pink{
@@ -222,6 +232,9 @@ footer p:nth-child(2){
 	display: flex;
 	justify-content: end;
 }
+
+
+
 
 .introduction .info-box {
 	background: #3718FF;
@@ -286,7 +299,7 @@ footer p:nth-child(2){
 	}
 
 
-a[href^='https://'] { color:#F689DC}
+a[href^='https://'] { color:#3718FF}
 a[href*='.pdf'] { color:#3718FF  }
 a:hover {color:#ffff00}
 /* a: link { color:red;} */
@@ -390,6 +403,7 @@ a:hover {color:#ffff00}
 	.mobile-visible {
 		display: none;
 	}
+	
 
 	h1 {
 		font-size: 6rem;
@@ -440,6 +454,7 @@ a:hover {color:#ffff00}
 		gap: 30px;
 }
 	}
+	
 }
 
 	.last-section{
@@ -451,16 +466,14 @@ a:hover {color:#ffff00}
 	align-items: end;
 	}
 
-	#scroll-to-top{
+	#Top{
+		text-align: right;
 		font-weight: bold;
 		color:#FFFF00
+		
 	}
 
-	footer{
-		background-color:black;
-		color:white;
-		padding:
-	}
+	
 
 /* Breakpoint Media Query */
 @media (min-width: 825px) {
@@ -476,6 +489,7 @@ a:hover {color:#ffff00}
 		display: none;
 	}
 
+	
 	h1 {
 		font-size: 8rem;
 		line-height: 8rem;
@@ -530,7 +544,11 @@ a:hover {color:#ffff00}
 		line-height:2rem;
 		
 	}
-	
+	footer {
+        background-color: black;
+        color: white;
+        flex-direction: column;}
+
 	.pink-section.section-padding{
 		flex-direction:row;
 	}
@@ -552,7 +570,11 @@ a:hover {color:#ffff00}
 @media print {
 
 h1{
-	font-size:10rem;
+	font-size :10rem;
+	line-height: 8rem;
+
+	
+
 }
 
 h2{
@@ -563,7 +585,8 @@ footer{
 	margin-top:10px;
 	border-top: solid 1px;
 	background-color:black;
-	color:white;
+	color:grey;
+	text-align: left;
 }
 .heading-pink-section{
 	color:black;
@@ -581,7 +604,7 @@ footer{
 }
 .black2-section-heading{
 	color:#3718FF;
-	font-weight:lighter;
+	font-weight:bold;
 	text-shadow: none;
 	transition:none;
 	text-align: right
@@ -611,7 +634,8 @@ footer{
 }
 .author-heading{
 	text-align: right;
-
+	color: black
+	
 }
 .info-box{
 	font-style:italic;
@@ -619,9 +643,10 @@ footer{
 	text-decoration-line:underline;
 }
 .published-date {
+	font-size: 2rem;
 	color:#3718FF;
 	font-weight:lighter;
-	padding-bottom: 10px;
+	padding-bottom: 6px;
 	margin-top:-10px;
 }
 h1{margin-bottom: 10erm;}
@@ -641,9 +666,7 @@ h1{margin-bottom: 10erm;}
 #Top{
 	color:black;
 }
-footer{
-	color:grey;
-}
+
 
 	* {animation: none;
 		transition: none;
